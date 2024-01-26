@@ -18,7 +18,6 @@ From PortfolioProject..CovidDeaths
 Where continent is not null 
 order by 1,2
 
-
 -- Total Cases vs Total Deaths
 -- Shows likelihood of dying if you contract covid in your country
 
@@ -28,7 +27,9 @@ Where location like '%states%'
 and continent is not null 
 order by 1,2
 
+---Answer: It is at the end of the one year period that we can see that the amount of total cases in the United States has risen to 32346971 while the total deaths have risen to 576232 and the DeathPercentage is 1.78140945561796
 
+	
 -- Total Cases vs Population
 -- Shows what percentage of population infected with Covid
 
@@ -142,8 +143,6 @@ Join PortfolioProject..CovidVaccinations vac
 
 Select *, (RollingPeopleVaccinated/Population)*100
 From #PercentPopulationVaccinated
-
-
 
 
 -- Creating View to store data for later visualizations
