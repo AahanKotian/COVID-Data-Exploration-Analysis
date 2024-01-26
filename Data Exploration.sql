@@ -74,7 +74,7 @@ Where continent is not null
 Group by continent
 order by TotalDeathCount desc
 
---Answer: The continent with the highest death rate was North America at 576232. You may note that this is the same number as the US and that it regrettably excludes Canada at 24220 and Mexico at 216907.
+--Answer: The continent with the highest death count was North America at 576232. You may note that this is the same number as the US and that it regrettably excludes Canada at 24220 and Mexico at 216907 into its equation.
 ______________________________________________________________________________________________________________________________
 
 -- GLOBAL NUMBERS
@@ -85,6 +85,7 @@ where continent is not null
 --Group By date
 order by 1,2
 
+--Answer: The amount of total cases was 150574977. Total deaths were 3180206. The Death Percentage was 2.11204149810363.
 ______________________________________________________________________________________________________________________________
 
 -- Total Population vs Vaccinations
