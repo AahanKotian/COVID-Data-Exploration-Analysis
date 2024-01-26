@@ -31,7 +31,6 @@ and continent is not null
 order by 1,2
 
 ---Answer: It is at the end of the one year period that we can see that the amount of total cases in the United States has risen to 32346971 while the total deaths have risen to 576232 and the DeathPercentage is 1.78140945561796
-
 ______________________________________________________________________________________________________________________________
 
 -- Total Cases vs Population
@@ -66,9 +65,9 @@ order by TotalDeathCount desc
 
 ______________________________________________________________________________________________________________________________
 
--- BREAKING THINGS DOWN BY CONTINENT
+-- ORGANIZING BY CONTINENT
 
--- Showing contintents with the highest death count per population
+-- Showing continents with the highest death count per population
 
 Select continent, MAX(cast(Total_deaths as int)) as TotalDeathCount
 From PortfolioProject..CovidDeaths
