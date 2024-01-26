@@ -12,7 +12,7 @@ order by 3,4
 
 ______________________________________________________________________________________________________________________________
 
--- Select Data that we are going to be starting with
+-- Select Starting Data
 
 Select Location, date, total_cases, new_cases, total_deaths, population
 From PortfolioProject..CovidDeaths
