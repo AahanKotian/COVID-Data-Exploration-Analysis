@@ -35,11 +35,11 @@ order by 1,2
 ______________________________________________________________________________________________________________________________
 
 -- Total Cases vs Population
--- Shows what percentage of population infected with Covid
+-- Shows what percentage of population of the United States was infected was with Covid
 
 Select Location, date, Population, total_cases,  (total_cases/population)*100 as PercentPopulationInfected
 From PortfolioProject..CovidDeaths
---Where location like '%states%'
+Where location like '%states%'
 order by 1,2
 
 ______________________________________________________________________________________________________________________________
