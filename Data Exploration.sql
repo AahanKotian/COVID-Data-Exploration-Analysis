@@ -10,6 +10,7 @@ From PortfolioProject..CovidDeaths
 Where continent is not null 
 order by 3,4
 
+______________________________________________________________________________________________________________________________
 
 -- Select Data that we are going to be starting with
 
@@ -17,6 +18,8 @@ Select Location, date, total_cases, new_cases, total_deaths, population
 From PortfolioProject..CovidDeaths
 Where continent is not null 
 order by 1,2
+
+______________________________________________________________________________________________________________________________
 
 -- Total Cases vs Total Deaths
 -- Shows likelihood of dying if you contract covid in your country
@@ -29,7 +32,8 @@ order by 1,2
 
 ---Answer: It is at the end of the one year period that we can see that the amount of total cases in the United States has risen to 32346971 while the total deaths have risen to 576232 and the DeathPercentage is 1.78140945561796
 
-	
+______________________________________________________________________________________________________________________________
+
 -- Total Cases vs Population
 -- Shows what percentage of population infected with Covid
 
@@ -38,6 +42,7 @@ From PortfolioProject..CovidDeaths
 --Where location like '%states%'
 order by 1,2
 
+______________________________________________________________________________________________________________________________
 
 -- Countries with Highest Infection Rate compared to Population
 
@@ -47,6 +52,7 @@ From PortfolioProject..CovidDeaths
 Group by Location, Population
 order by PercentPopulationInfected desc
 
+______________________________________________________________________________________________________________________________
 
 -- Countries with Highest Death Count per Population
 
@@ -57,7 +63,7 @@ Where continent is not null
 Group by Location
 order by TotalDeathCount desc
 
-
+______________________________________________________________________________________________________________________________
 
 -- BREAKING THINGS DOWN BY CONTINENT
 
@@ -70,7 +76,7 @@ Where continent is not null
 Group by continent
 order by TotalDeathCount desc
 
-
+______________________________________________________________________________________________________________________________
 
 -- GLOBAL NUMBERS
 
@@ -81,7 +87,7 @@ where continent is not null
 --Group By date
 order by 1,2
 
-
+______________________________________________________________________________________________________________________________
 
 -- Total Population vs Vaccinations
 -- Shows Percentage of Population that has recieved at least one Covid Vaccine
@@ -96,6 +102,7 @@ Join PortfolioProject..CovidVaccinations vac
 where dea.continent is not null 
 order by 2,3
 
+______________________________________________________________________________________________________________________________
 
 -- Using CTE to perform Calculation on Partition By in previous query
 
@@ -115,7 +122,7 @@ where dea.continent is not null
 Select *, (RollingPeopleVaccinated/Population)*100
 From PopvsVac
 
-
+______________________________________________________________________________________________________________________________
 
 -- Using Temp Table to perform Calculation on Partition By in previous query
 
@@ -144,6 +151,7 @@ Join PortfolioProject..CovidVaccinations vac
 Select *, (RollingPeopleVaccinated/Population)*100
 From #PercentPopulationVaccinated
 
+______________________________________________________________________________________________________________________________
 
 -- Creating View to store data for later visualizations
 
