@@ -18,7 +18,6 @@ Select Location, date, total_cases, new_cases, total_deaths, population
 From PortfolioProject..CovidDeaths
 Where continent is not null 
 order by 1,2
-
 ______________________________________________________________________________________________________________________________
 
 -- Total Cases vs Total Deaths
@@ -30,7 +29,7 @@ Where location like '%states%'
 and continent is not null 
 order by 1,2
 
----Answer: It is at the end of the one year period that we can see that the amount of total cases in the United States has risen to 32346971 while the total deaths have risen to 576232 and the DeathPercentage is 1.78140945561796
+---Answer: It is at the end of the one year period that we can see that the amount of total infection cases in the United States has risen to 32346971 while the total deaths have risen to 576232 and the DeathPercentage is 1.78140945561796
 ______________________________________________________________________________________________________________________________
 
 -- Total Cases vs Population
@@ -42,7 +41,6 @@ Where location like '%states%'
 order by 1,2
 
 --Answer: At the end of the surveyed period the percentage fo the US population who had contracted COVID was 9.77242064169958.
-
 ______________________________________________________________________________________________________________________________
 
 -- Countries with Highest Infection Rate and Count compared to Population
@@ -63,6 +61,7 @@ Where continent is not null
 Group by Location
 order by TotalDeathCount desc
 
+--Answer: The country with the highest reported death count is the US at 576232.
 ______________________________________________________________________________________________________________________________
 
 -- ORGANIZING BY CONTINENT
@@ -75,6 +74,7 @@ Where continent is not null
 Group by continent
 order by TotalDeathCount desc
 
+--Answer: The continent with the highest death rate was North America at 576232. You may note that this is the same number as the US and that it regrettably excludes Canada at 24220 and Mexico at 216907.
 ______________________________________________________________________________________________________________________________
 
 -- GLOBAL NUMBERS
