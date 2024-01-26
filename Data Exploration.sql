@@ -46,13 +46,14 @@ order by 1,2
 
 ______________________________________________________________________________________________________________________________
 
--- Countries with Highest Infection Rate compared to Population
+-- Countries with Highest Infection Rate and Count compared to Population
 
 Select Location, Population, MAX(total_cases) as HighestInfectionCount,  Max((total_cases/population))*100 as PercentPopulationInfected
 From PortfolioProject..CovidDeaths
 Group by Location, Population
 order by PercentPopulationInfected desc
 
+--Answer: According to the data, Andorra is the country with the highest infection rate at 17.1254772536077, noting this represents 13232 people out of a population of 77265.
 ______________________________________________________________________________________________________________________________
 
 -- Countries with Highest Death Count per Population
